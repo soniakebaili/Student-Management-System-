@@ -3,15 +3,13 @@ import static java.awt.Color.BLUE;
 import static java.awt.Color.GREEN;
 import static java.awt.Color.yellow;
 
-
 public class showScoresForm extends javax.swing.JFrame
 {
     
     score sc = new score();
    
     public showScoresForm() 
-    
-    
+
     {
         initComponents();
         
@@ -22,7 +20,6 @@ public class showScoresForm extends javax.swing.JFrame
         jTable1.setSelectionBackground(GREEN);
         
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -89,7 +86,6 @@ public class showScoresForm extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-   
     public static void main(String args[]) 
     {
         

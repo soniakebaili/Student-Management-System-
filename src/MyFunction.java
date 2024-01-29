@@ -8,7 +8,6 @@ import java.util.logging.Logger;
 public class MyFunction
 {
 
-  
     public static int countData(String tableName)
     {
     

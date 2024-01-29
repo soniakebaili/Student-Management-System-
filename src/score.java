@@ -9,12 +9,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-
 public class score {
-    
-    
-    
-    
+
     public void insertUpdateDeleteStudent(char operation, Integer Sid, Integer Cid, Double scr, String descp)
             
             
@@ -70,14 +66,7 @@ public class score {
              ps.setInt(3, Sid);
             
              ps.setInt(4, Cid);
-          
-             
-           
-            
-             
-             
-             
-             
+   
             if(ps.executeUpdate()> 0)
                 
             {

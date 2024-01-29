@@ -253,24 +253,6 @@ public class editDeleteScore extends javax.swing.JFrame {
          sc.fillScoreJtable(jTable1);
 
 
-
-        //        if(!jTextField_StudentId.getText().equals(""))
-        //
-        //        {
-            //            int id = Integer.valueOf(jTextField_StudentId.getText());
-            //
-            //            c.insertUpdateDeleteStudent('d', id, null, null);
-            //
-            //            manageCourseForm.jTable1.setModel(new DefaultTableModel(null,new Object[]{"ID","Label","Hours"}));
-            //
-            //            c.fillCourseJtable( manageCourseForm.jTable1);
-            //
-            //            jTextField_StudentId.setText("");
-            //
-            //            jTextField_CourseId.setText("");
-            //
-            //            jSpinner1.setValue(4);
-            //        }
     }//GEN-LAST:event_jButtonRemoveScoreActionPerformed
 
     private void jTextField_StudentIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_StudentIdActionPerformed
@@ -297,21 +279,6 @@ public class editDeleteScore extends javax.swing.JFrame {
          sc.fillScoreJtable(jTable1);
 
 
-//        int stdId = Integer.valueOf(jTextField_StudentId.getText());
-//
-//        int crsId = c.getCourseId(jComboBox1CourseID.getSelectedItem().toString());
-//
-//        double scr = Double.valueOf(jTextField_Score.getText());
-//
-//        System.out.println(crsId);
-//
-//        sc.insertUpdateDeleteStudent('i', stdId,crsId , scr, jTextField_Description.getText());
-
-        //        addCourseForm Addcf= new addCourseForm();
-        //        Addcf.setVisible(true);
-        //        Addcf.pack();
-        //        Addcf.setLocationRelativeTo(null);
-        //        Addcf.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButtonEditScoreActionPerformed
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked

@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 public class student 
 
 {
-    public void insertUpdateDeleteStudent(char operation, Integer id, String fname, String lname,String sex, String bdate, String phone, String Address )
+    public void insertUpdateDeleteStudent(char operation, Integer id, String fname, String lname,String Sex, String bdate, String phone, String Address )
     
     
     
@@ -30,13 +30,13 @@ public class student
   {
         try 
         {
-            ps = con.prepareStatement("INSERT INTO student(first_name, last_name, sex, birthdate, phone, Address) VALUES (?,?,?,?,?,?)");
+            ps = con.prepareStatement("INSERT INTO student(first_name, last_name, sex, birthdate, phone, address) VALUES (?,?,?,?,?,?)");
             
             ps.setString(1, fname);
             
             ps.setString(2, lname);
             
-            ps.setString(3, sex);
+            ps.setString(3, Sex);
             
             ps.setString(4, bdate);
             
@@ -62,13 +62,13 @@ public class student
   {
         try 
         {
-            ps = con.prepareStatement("UPDATE student SET `first_name`= ?, `last_name`= ?, `sex`= ?, `birthdate`= ?, `phone`= ?, `Address`= ? WHERE `id` = ?");
+            ps = con.prepareStatement("UPDATE student SET `first_name`= ?, `last_name`= ?, `sex`= ?, `birthdate`= ?, `phone`= ?, `address`= ? WHERE `id` = ?");
             
             ps.setString(1, fname);
             
             ps.setString(2, lname);
             
-            ps.setString(3, sex);
+            ps.setString(3, Sex);
             
             ps.setString(4, bdate);
             
@@ -124,7 +124,7 @@ public void fillStudentJtable(JTable table, String valueToSearch)
     
     
         try {
-            ps = con.prepareStatement("SELECT * FROM student WHERE CONCAT(`first_name`, `last_name`, `phone`, `Address`)LIKE ?");
+            ps = con.prepareStatement("SELECT * FROM student WHERE CONCAT(`first_name`, `last_name`, `phone`, `address`)LIKE ?");
             
             ps.setString(1,"%"+valueToSearch+"%");
             

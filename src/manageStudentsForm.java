@@ -39,15 +39,7 @@ public class manageStudentsForm extends javax.swing.JFrame {
         jTable1.setShowGrid(true);
         jTable1.setGridColor(yellow);
         jTable1.setSelectionBackground(BLACK);
-        
-        
-        
-        
-        
-        
-        
-        
-        
+  
     }
 
 

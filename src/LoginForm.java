@@ -203,9 +203,7 @@ System.exit(0);
                mf.setVisible(true);
                mf.pack();
                mf.setLocationRelativeTo(null);
-               
-               
-               
+            
               mf.setExtendedState(JFrame.MAXIMIZED_BOTH);
               
               MainForm.jLabel_Username.setText("welcome<"+jTextField_Username.getText()+">");

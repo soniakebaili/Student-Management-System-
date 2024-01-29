@@ -6,7 +6,6 @@ import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-
 public class AddStudentForm extends javax.swing.JFrame 
 {
     
@@ -287,11 +286,11 @@ return true;
         
         String Address = jTextArea_Address.getText();
         
-        String sex = "Male";
+        String Sex = "Male";
         
         if(jRadioButtonFemale.isSelected())
         {
-            sex = "Female";
+            Sex = "Female";
         }
         
         
@@ -303,11 +302,10 @@ return true;
         
         student std = new student();
         
-        std.insertUpdateDeleteStudent('i',null, fname, lname, sex, bdate, phone, Address);
+        std.insertUpdateDeleteStudent('i',null, fname, lname, Sex, bdate, phone, Address);
         
          MainForm.jLabel_StdCount.setText(" Student Count = "+Integer.toString(MyFunction.countData("student")));
-         
-         
+      
          try
          {
               manageStudentsForm.jTable1.setModel(new DefaultTableModel(null,new Object[]{"Id","First Name","Last Name","Sex","BirthDate","Phone","Address"}));
@@ -335,9 +333,7 @@ return true;
         }
         });
     }           
-               
-               
-               
+    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAddStudent1;

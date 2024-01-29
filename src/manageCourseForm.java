@@ -4,11 +4,10 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+public class manageCourseForm extends javax.swing.JFrame 
 
+{
 
-public class manageCourseForm extends javax.swing.JFrame {
-
-  
     Course c = new Course();
       
     public manageCourseForm() 
@@ -230,24 +229,11 @@ public class manageCourseForm extends javax.swing.JFrame {
 //                 JOptionPane.showMessageDialog(null, "Course Edited");
     } 
         
-      
-        
     }//GEN-LAST:event_jButtonEditCourseActionPerformed
 
     private void jButtonRemoveCourseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRemoveCourseActionPerformed
 
-        
-        //wehen we delete a course we must also delete all score affected to this course
-        //we have to add a constraint to score table to do this 
-        //constraint --> forgein key + on delete cascade
-        
-//            ALTER TABLE score
-//                add CONSTRAINT fk_score_course
-//                FOREIGN KEY(`course_id`)
-//                REFERENCES course (Id)
-//                on DELETE CASCADE
-
-        
+     
         if(!jTextField_CourseId.getText().equals(""))
         
         {
@@ -286,6 +272,7 @@ public class manageCourseForm extends javax.swing.JFrame {
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         
         int index = jTable1.getSelectedRow();
+        
         jTextField_CourseId.setText(jTable1.getValueAt(index, 0).toString());
         
         jTextField_CourseLabel.setText(jTable1.getValueAt(index, 1).toString());

@@ -32,7 +32,7 @@ public class Course
   {
         try 
         {
-            ps = con.prepareStatement("INSERT INTO `course`(`label`, `hours-number`) VALUES (?, ?)");
+            ps = con.prepareStatement("INSERT INTO `course`(`label`, `hours_number`) VALUES (?, ?)");
             
             ps.setString(1, label);
             
@@ -54,7 +54,7 @@ public class Course
   {
         try 
         {
-            ps = con.prepareStatement("UPDATE `course` SET `label`= ?, `hours-number`= ? WHERE `ID` = ?");
+            ps = con.prepareStatement("UPDATE `course` SET `label`= ?, `hours_number`= ? WHERE `id` = ?");
             
             
              ps.setInt(3, ID);
@@ -215,7 +215,7 @@ public int getCourseId(String courseLabel)
                
             {
               
-               courseId = rs.getInt("Id");
+               courseId = rs.getInt("id");
                  
             }
             

@@ -2,19 +2,12 @@
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-
 public class addCourseForm extends javax.swing.JFrame
-
-
 
     {
 
-     
-    
     Course c = new Course();
-    
-    
-    
+
     public addCourseForm()
     {
         initComponents();
@@ -184,43 +177,7 @@ public class addCourseForm extends javax.swing.JFrame
 
         
         this.dispose();
-        
-        
-        
-//        if(jTextField_STD_ID.getText().equals(""))
-//        {
-//            JOptionPane.showMessageDialog(null, "No Student Selected");
-//        }
-//        else
-//        {
-//
-//            int id = Integer.valueOf(jTextField_STD_ID.getText());
-//            std.insertUpdateDeleteStudent('d',id, null, null, null, null, null, null);
-//            std.fillStudentJtable(jTable1, "");
-//
-//            jTable1.setModel(new DefaultTableModel(null,new Object[]{"Id","First Name","Last Name","Sex","BirthDate","Phone","Address"}));
-//
-//            std.fillStudentJtable(jTable1, jTextField_Val_Find.getText());
-//
-//            MainForm.jLabel_StdCount.setText(" Student Count = "+Integer.toString(MyFunction.countData("student")));
-//
-//            jTextField_STD_ID.setText("");
-//
-//            jTextArea_Address.setText("");
-//
-//            jTextField_FName.setText("");
-//
-//            jTextField_LName.setText("");
-//
-//            jTextField_Phone.setText("");
-//
-//            jRadioButtonFemale.setSelected(false);
-//
-//            jRadioButtonMale.setSelected(false);
-//
-//            jDateChooserBirthDate.setDate(null);
-//
-//        }
+    
     }//GEN-LAST:event_jButtonCancelActionPerformed
 
     /**
